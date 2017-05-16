@@ -1,106 +1,86 @@
-//
-//   table, th, tr, td {
-//       border: 1px solid black;
-//       height: 30px;
-//       width: 30px;
-//       text-align: center;
-//       font-size: 24pt;
-//       margin-left: 20px;
-//       color: #00a0f4;
-//       background-color: #ECD8D1;
-//   }
-//
-// .Weekdays{
-//   height: 40px;
-//   width: 40px;
-// }
+.Calendar {
 
+  table {
+    width: 1000px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  }
 
-// --------->>>>
+  //name of days
+  .dayNames {
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #dddddd;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+  }
 
+  .header {
+    border-bottom: none;
+  }
 
-// new stuff
+  //td's in calendar
+  .dayBlank {
+    height: 95px;
+    width: 14.28%;
+    text-align: right;
+    vertical-align: text-bottom;
+    border: 1px solid #bbb;
+    padding-right: 10px;
+    padding-top: 5px;
+  }
 
+  //reading items
+  .data-result {
+    text-align: center;
+    font-size: .8em;
+    margin: 5px;
+    padding: 0;
+    vertical-align: text-bottom;
+    display: block;
+  }
 
+  .data-result:hover{
+    cursor: pointer;
+    background-color: #006faa;
+    color: #ffffff;
+  }
 
-body {
- margin: 0;
- padding: 0;
- font-family: sans-serif;
+  .data-result-all {
+    vertical-align: text-bottom;
+  }
+
+  //header with month
+  .currentMonth {
+    display: inline;
+    padding-right: 450px;
+    font-size: 1.3em;
+  }
+
+  //today and chevron buttons
+  button{
+    font-family: "museo-sans-rounded", Helvetica, Arial, sans-serif;
+    display: inline;
+    font-size: .7em;
+    font-weight: lighter;
+    outline: none;
+    border-color: transparent;
+    background-color: transparent;
+    color: #555;
+  }
+
+  .button {
+      color: #006faa;
+  }
+
+  .btngroup {
+    float: right;
+  }
+
+  .todayHighLight {
+    background-color: #c8ecff;
+  }
 }
-
-table, td, .day {
- text-align: center;
- width: 131px;
- border: 2px solid black;
- border-collapse: collapse;
- background-color: #ECD8D1;
- color: #00a0f4;
-}
-
-.weekDaysTable  {
- border-left: 2px bold black;
- height: 130px;
- width: 130px;
- // margin: auto;
- border-top: 1px solid black;
- border-left: 1px solid black;
- // margin: 0;
- // border-spacing: collapse;
- padding-left: 40px;
- padding-right: 40px;
- // display: inline;
-}
-
-.Current_Month{
-  float: right;
-}
-
-.daysTable, .weekDays, .dayBlank {
- background-color: #ECD8D1;
- color: #00a0f4;
- border-left: 2px bold black;
- height: 130px;
- width: 130px;
- // margin: auto;
- border-top: 1px solid black;
- border-left: 1px solid black;
- margin: 0;
- // border-spacing: collapse;
- padding-left: 56.5px;
- padding-right: 56.5px;
- //
-}
-.Previous_button,
-.today_button,
-.Next_button {
-  display: inline-block;
-  //  padding: 10px;
-   font-size: 18px;
-   cursor: pointer;
-   text-align: center;
-   text-decoration: none;
-   outline: none;
-   color: #fff;
-   background-color: #00a0f4;
-   border: none;
-   border-radius: 15px;
-   box-shadow: 0 9px #999;
-
- }
- .Previous_button:hover,
- .today_button:hover,
- .Next_button:hover {background-color: #3e8e41}
-
- .Previous_button:active,
- .today_button:active,
- .Next_button:active {
-   background-color: #3e8e41;
-   box-shadow: 0 5px #666;
-   transform: translateY(4px);
- }
-
-.month_button3{
-  float: right;
-}
-.button:hover {background-color: #3e8e41}
